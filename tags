@@ -1,0 +1,288 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+ALL_NEG	vertices.h	/^typedef enum {ALL_POS, ALL_NEG, MIXED, FLAT}			vertexType;$/;"	e	enum:__anon1a8023400103
+ALL_POS	vertices.h	/^typedef enum {ALL_POS, ALL_NEG, MIXED, FLAT}			vertexType;$/;"	e	enum:__anon1a8023400103
+AXES_LIST	glObjDisplay.c	/^#define AXES_LIST	/;"	d	file:
+AppTitle	glDisplay.c	/^char *AppTitle = "Obj File Viewer";$/;"	v	typeref:typename:char *
+BACK_ID	glTextures.h	/^#define BACK_ID	/;"	d
+BOTTOM_ID	glTextures.h	/^#define BOTTOM_ID	/;"	d
+CCW	geometry.h	/^typedef enum {CW, CCW, COL}     spinType;$/;"	e	enum:__anonf62ab2e70103
+COL	geometry.h	/^typedef enum {CW, CCW, COL}     spinType;$/;"	e	enum:__anonf62ab2e70103
+CW	geometry.h	/^typedef enum {CW, CCW, COL}     spinType;$/;"	e	enum:__anonf62ab2e70103
+EPSILON	geometry.h	/^#define EPSILON /;"	d
+FALSE	tools.h	/^typedef enum {FALSE, TRUE}	boolean;$/;"	e	enum:__anonf0258b0c0103
+FIXED_LISTS	glObjDisplay.c	/^#define FIXED_LISTS	/;"	d	file:
+FLAT	vertices.h	/^typedef enum {ALL_POS, ALL_NEG, MIXED, FLAT}			vertexType;$/;"	e	enum:__anon1a8023400103
+FRONT_ID	glTextures.h	/^#define FRONT_ID	/;"	d
+INTER	geometry.h	/^typedef enum {NORMAL, INTER, VISITED}	vectorType;$/;"	e	enum:__anonf62ab2e70203
+LEFT_ID	glTextures.h	/^#define LEFT_ID	/;"	d
+LINEAR	glTextures.h	/^typedef enum {NEAR, LINEAR, MIPMAP}	textureFilter;$/;"	e	enum:__anon4fad1ff20103
+MIPMAP	glTextures.h	/^typedef enum {NEAR, LINEAR, MIPMAP}	textureFilter;$/;"	e	enum:__anon4fad1ff20103
+MIXED	vertices.h	/^typedef enum {ALL_POS, ALL_NEG, MIXED, FLAT}			vertexType;$/;"	e	enum:__anon1a8023400103
+M_PI	glDisplay.c	/^#define M_PI /;"	d	file:
+Max_Size	glObjDisplay.c	/^int 	        Max_Size = 3.0;$/;"	v	typeref:typename:int
+NEAR	glTextures.h	/^typedef enum {NEAR, LINEAR, MIPMAP}	textureFilter;$/;"	e	enum:__anon4fad1ff20103
+NORMAL	geometry.h	/^typedef enum {NORMAL, INTER, VISITED}	vectorType;$/;"	e	enum:__anonf62ab2e70203
+NUM_TEXTURES	glObjDisplay.c	/^#define NUM_TEXTURES	/;"	d	file:
+OBJECT_LIST	glObjDisplay.c	/^#define	OBJECT_LIST	/;"	d	file:
+OBJECT_NORMALS_LIST	glObjDisplay.c	/^#define	OBJECT_NORMALS_LIST	/;"	d	file:
+ObjectData	objReader.c	/^objectStruct	ObjectData;$/;"	v	typeref:typename:objectStruct
+PI	geometry.h	/^#define PI /;"	d
+RIGHT_ID	glTextures.h	/^#define RIGHT_ID	/;"	d
+SHORT_PI	geometry.h	/^#define SHORT_PI /;"	d
+SPHERE_LIST	glObjDisplay.c	/^#define	SPHERE_LIST	/;"	d	file:
+SaveScreenShot	glScreenCapture.c	/^void SaveScreenShot(unsigned int serial, int width, int height)$/;"	f	typeref:typename:void
+TOP_ID	glTextures.h	/^#define TOP_ID	/;"	d
+TRUE	tools.h	/^typedef enum {FALSE, TRUE}	boolean;$/;"	e	enum:__anonf0258b0c0103
+ToggleAxes	glObjDisplay.c	/^boolean			ToggleAxes = FALSE;$/;"	v	typeref:typename:boolean
+ToggleCullFaces	glObjDisplay.c	/^boolean			ToggleCullFaces = TRUE;$/;"	v	typeref:typename:boolean
+ToggleDisplayInfo	glObjDisplay.c	/^boolean			ToggleDisplayInfo = FALSE;$/;"	v	typeref:typename:boolean
+ToggleTextures	glObjDisplay.c	/^boolean			ToggleTextures = FALSE;$/;"	v	typeref:typename:boolean
+ToggleWireframe	glObjDisplay.c	/^boolean			ToggleWireframe = TRUE;$/;"	v	typeref:typename:boolean
+VISITED	geometry.h	/^typedef enum {NORMAL, INTER, VISITED}	vectorType;$/;"	e	enum:__anonf62ab2e70203
+WIREFRAME_LIST	glObjDisplay.c	/^#define WIREFRAME_LIST	/;"	d	file:
+X	tools.h	/^#define X	/;"	d
+Y	tools.h	/^#define Y	/;"	d
+Z	tools.h	/^#define Z	/;"	d
+__anon1a8023400103	vertices.h	/^typedef enum {ALL_POS, ALL_NEG, MIXED, FLAT}			vertexType;$/;"	g
+__anon4fad1fed0108	glTextures.c	/^typedef struct {$/;"	s	file:
+__anon4fad1ff20103	glTextures.h	/^typedef enum {NEAR, LINEAR, MIPMAP}	textureFilter;$/;"	g
+__anonf0258b0c0103	tools.h	/^typedef enum {FALSE, TRUE}	boolean;$/;"	g
+__anonf62ab2e70103	geometry.h	/^typedef enum {CW, CCW, COL}     spinType;$/;"	g
+__anonf62ab2e70203	geometry.h	/^typedef enum {NORMAL, INTER, VISITED}	vectorType;$/;"	g
+activateRotation	glDisplay.c	/^int     activateRotation, activateScaling, activateTranslation;$/;"	v	typeref:typename:int
+activateScaling	glDisplay.c	/^int     activateRotation, activateScaling, activateTranslation;$/;"	v	typeref:typename:int
+activateTranslation	glDisplay.c	/^int     activateRotation, activateScaling, activateTranslation;$/;"	v	typeref:typename:int
+active	glMain.c	/^int	active;$/;"	v	typeref:typename:int
+addFaceToVertexFaceArray	objParser.c	/^nodePtr* addFaceToVertexFaceArray (nodePtr* vertexFaceArray, facePtr face, int numVertices, int*/;"	f	typeref:typename:nodePtr *
+addFrontNode	lists.c	/^nodePtr addFrontNode (nodePtr list, void* newData)$/;"	f	typeref:typename:nodePtr
+addNode	lists.c	/^nodePtr addNode (nodePtr list, void* newData)$/;"	f	typeref:typename:nodePtr
+advanceList	lists.c	/^nodePtr advanceList (nodePtr pointer, char* functionName)$/;"	f	typeref:typename:nodePtr
+angleBetweenVectors	geometry.c	/^double angleBetweenVectors (vectorPtr vector1, vectorPtr vector2)$/;"	f	typeref:typename:double
+angleBetweenVertices	geometry.c	/^double angleBetweenVertices (vertexStruct vertex1, vertexStruct vertex2, vertexStruct vertex3)$/;"	f	typeref:typename:double
+blob	glDisplay.c	/^    unsigned char blob[16];$/;"	m	struct:htime	typeref:typename:unsigned char[16]	file:
+boolean	tools.h	/^typedef enum {FALSE, TRUE}	boolean;$/;"	t	typeref:enum:__anonf0258b0c0103
+buildFont	glDisplay.c	/^GLvoid buildFont(GLvoid)$/;"	f	typeref:typename:GLvoid
+copyList	lists.c	/^nodePtr copyList (nodePtr list, size_t dataSize)$/;"	f	typeref:typename:nodePtr
+copyNode	lists.c	/^void* copyNode (void* node, size_t dataSize)$/;"	f	typeref:typename:void *
+copyVertex	vertices.c	/^void copyVertex (vertexPtr source, vertexPtr destination)$/;"	f	typeref:typename:void
+createEmptyFace	faces.c	/^facePtr	createEmptyFace (void)$/;"	f	typeref:typename:facePtr
+createIntPointer	vertices.c	/^int* createIntPointer (int data)$/;"	f	typeref:typename:int *
+createSegment	geometry.c	/^segmentPtr createSegment (int vertex1, int vertex2, int info)$/;"	f	typeref:typename:segmentPtr
+createVertex	vertices.c	/^vertexPtr createVertex (int id, double newX, double newY, double newZ)$/;"	f	typeref:typename:vertexPtr
+crossProduct	geometry.c	/^vectorPtr crossProduct (vectorPtr vector1, vectorPtr vector2)$/;"	f	typeref:typename:vectorPtr
+ctx	glMain.c	/^GLXContext	ctx;$/;"	v	typeref:typename:GLXContext
+data	glTextures.c	/^    unsigned char *data;$/;"	m	struct:__anon4fad1fed0108	typeref:typename:unsigned char *	file:
+data	lists.h	/^	void*	 	data;$/;"	m	struct:node	typeref:typename:void *
+deleteFont	glDisplay.c	/^GLvoid deleteFont(GLvoid)$/;"	f	typeref:typename:GLvoid
+displayLight	glDisplay.c	/^GLuint	displayLight, mode, shade, displayNormals;$/;"	v	typeref:typename:GLuint
+displayNormals	glDisplay.c	/^GLuint	displayLight, mode, shade, displayNormals;$/;"	v	typeref:typename:GLuint
+displayVertexArray	object3D.h	/^	vertexPtr	displayVertexArray;$/;"	m	struct:objectStruct	typeref:typename:vertexPtr
+distance2Vertices	geometry.c	/^double distance2Vertices (vertexStruct vertex1, vertexStruct vertex2)$/;"	f	typeref:typename:double
+distanceVertexToSegment	geometry.c	/^double distanceVertexToSegment (vertexStruct vertex, vertexStruct segmentVertex1, vertexStruct s/;"	f	typeref:typename:double
+dotProduct	geometry.c	/^double dotProduct (vectorPtr vector1, vectorPtr vector2)$/;"	f	typeref:typename:double
+dpy	glMain.c	/^Display		*dpy;$/;"	v	typeref:typename:Display *
+edgeId	edges.h	/^	int		edgeId;$/;"	m	struct:edgeStruct	typeref:typename:int
+edgeList	object3D.h	/^	nodePtr		edgeList;$/;"	m	struct:objectStruct	typeref:typename:nodePtr
+edgePtr	edges.h	/^typedef edgeStruct* edgePtr;$/;"	t	typeref:typename:edgeStruct *
+edgeStruct	edges.h	/^typedef struct edgeStruct$/;"	s
+edgeStruct	edges.h	/^} edgeStruct;$/;"	t	typeref:struct:edgeStruct
+extra	vertices.h	/^	int     extra;$/;"	m	struct:vertexStruct	typeref:typename:int
+faceArray	object3D.h	/^	facePtr		faceArray;$/;"	m	struct:objectStruct	typeref:typename:facePtr
+faceId	faces.h	/^	int			faceId;$/;"	m	struct:faceStruct	typeref:typename:int
+faceNormal	faces.h	/^	vectorPtr	faceNormal;$/;"	m	struct:faceStruct	typeref:typename:vectorPtr
+facePtr	faces.h	/^typedef faceStruct* facePtr;$/;"	t	typeref:typename:faceStruct *
+faceStruct	faces.h	/^typedef struct faceStruct$/;"	s
+faceStruct	faces.h	/^} faceStruct;$/;"	t	typeref:struct:faceStruct
+faceVertices	faces.h	/^	int			faceVertices;$/;"	m	struct:faceStruct	typeref:typename:int
+findFarCollinearVertex	geometry.c	/^int findFarCollinearVertex (vertexStruct vertex1, vertexStruct vertex2, vertexStruct vertex3)$/;"	f	typeref:typename:int
+fogColor	glDisplay.c	/^GLfloat fogColor[] = { 0.5f, 0.5f, 0.5f, 1.0f };    \/* fog color *\/$/;"	v	typeref:typename:GLfloat[]
+fogFilter	glDisplay.c	/^GLuint fogFilter = 0;   \/* which fog to use *\/$/;"	v	typeref:typename:GLuint
+fogMode	glDisplay.c	/^GLuint fogMode[] = { GL_EXP, GL_EXP2, GL_LINEAR };  \/* three types of fog *\/$/;"	v	typeref:typename:GLuint[]
+font	glDisplay.c	/^GLuint	font;$/;"	v	typeref:typename:GLuint
+fps	glDisplay.c	/^GLfloat	fps;$/;"	v	typeref:typename:GLfloat
+frames	glDisplay.c	/^int	frames;$/;"	v	typeref:typename:int
+freeList	lists.c	/^void freeList (nodePtr list)$/;"	f	typeref:typename:void
+freeListArray	lists.c	/^void freeListArray (nodePtr* listArray, int numLists)$/;"	f	typeref:typename:void
+freeListOfLists	lists.c	/^void freeListOfLists (nodePtr mainList)$/;"	f	typeref:typename:void
+freeObjectMemory	objReader.c	/^void freeObjectMemory ()$/;"	f	typeref:typename:void
+generateObject	objReader.c	/^void generateObject (char* inputFile)$/;"	f	typeref:typename:void
+getListLength	lists.c	/^int getListLength (nodePtr list)$/;"	f	typeref:typename:int
+getListTail	lists.c	/^nodePtr getListTail (nodePtr list)$/;"	f	typeref:typename:nodePtr
+getMax	geometry.c	/^double getMax (double first, double second)$/;"	f	typeref:typename:double
+getMin	geometry.c	/^double getMin (double first, double second)$/;"	f	typeref:typename:double
+getNodeData	lists.c	/^void* getNodeData (nodePtr list, int itemPosition)$/;"	f	typeref:typename:void *
+getTriangleNormal	normals3D.c	/^vectorPtr getTriangleNormal (vertexStruct vertex1, vertexStruct vertex2, vertexStruct vertex3)$/;"	f	typeref:typename:vectorPtr
+glMain	glMain.c	/^int glMain ( void )$/;"	f	typeref:typename:int
+gl_billboard_end	glTools.c	/^void gl_billboard_end ()$/;"	f	typeref:typename:void
+gl_billboard_init	glTools.c	/^void gl_billboard_init ()$/;"	f	typeref:typename:void
+gl_cleanup	glObjDisplay.c	/^void gl_cleanup ()$/;"	f	typeref:typename:void
+gl_create_axis_list	glObjDisplay.c	/^void gl_create_axis_list (GLuint list)$/;"	f	typeref:typename:void
+gl_create_display_lists	glObjDisplay.c	/^void gl_create_display_lists ()$/;"	f	typeref:typename:void
+gl_data	glDisplay.c	/^int gl_data( void )$/;"	f	typeref:typename:int
+gl_draw	glDisplay.c	/^void gl_draw( )$/;"	f	typeref:typename:void
+gl_draw_scene_1	glObjDisplay.c	/^void gl_draw_scene_1 ()$/;"	f	typeref:typename:void
+gl_edges_to_display_list	glObjectLists.c	/^void gl_edges_to_display_list (GLuint list, objectStruct objectData)$/;"	f	typeref:typename:void
+gl_event	glDisplay.c	/^void gl_event( int event, int data, int xpos, int ypos )$/;"	f	typeref:typename:void
+gl_faces_to_display_list	glObjectLists.c	/^void gl_faces_to_display_list (GLuint list, objectStruct objectData, int colourType)$/;"	f	typeref:typename:void
+gl_init	glDisplay.c	/^int gl_init( void )$/;"	f	typeref:typename:int
+gl_init_fog	glDisplay.c	/^void gl_init_fog ()$/;"	f	typeref:typename:void
+gl_init_light	glDisplay.c	/^void gl_init_light ()$/;"	f	typeref:typename:void
+gl_no_lighting	glTools.c	/^void gl_no_lighting (GLboolean* light_status)$/;"	f	typeref:typename:void
+gl_normals_to_display_list	glObjectLists.c	/^void gl_normals_to_display_list (GLuint list, objectStruct objectData)$/;"	f	typeref:typename:void
+gl_prepare_scene	glObjDisplay.c	/^void gl_prepare_scene ()$/;"	f	typeref:typename:void
+gl_prepare_scene_textures	glObjDisplay.c	/^void gl_prepare_scene_textures ()$/;"	f	typeref:typename:void
+gl_printf	glDisplay.c	/^void gl_printf( GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha,$/;"	f	typeref:typename:void
+gl_quadric_sphere	glObjDisplay.c	/^void gl_quadric_sphere (GLuint list)$/;"	f	typeref:typename:void
+gl_resize	glDisplay.c	/^void gl_resize( void )$/;"	f	typeref:typename:void
+gl_restore_lighting	glTools.c	/^void gl_restore_lighting (GLboolean light_status)$/;"	f	typeref:typename:void
+gl_rotate_scene	glDisplay.c	/^void gl_rotate_scene ()$/;"	f	typeref:typename:void
+gl_scale_scene	glDisplay.c	/^void gl_scale_scene ()$/;"	f	typeref:typename:void
+gl_scene	glDisplay.c	/^void gl_scene( )$/;"	f	typeref:typename:void
+gl_scene_event	glObjDisplay.c	/^void gl_scene_event( int event, int data, int xpos, int ypos )$/;"	f	typeref:typename:void
+gl_show_single_normal	glObjDisplay.c	/^void gl_show_single_normal (int vertexNumber, objectStruct objectData)$/;"	f	typeref:typename:void
+gl_translate_scene	glDisplay.c	/^void gl_translate_scene ()$/;"	f	typeref:typename:void
+glx_init	glMain.c	/^int glx_init( int fullscreen )$/;"	f	typeref:typename:int
+height	glDisplay.c	/^int	width, height;$/;"	v	typeref:typename:int
+height	glTextures.c	/^    int height;$/;"	m	struct:__anon4fad1fed0108	typeref:typename:int	file:
+hide_mouse	glMain.c	/^void hide_mouse( void )$/;"	f	typeref:typename:void
+htime	glDisplay.c	/^struct htime$/;"	s	file:
+i	geometry.h	/^	double		i;$/;"	m	struct:vectorStruct	typeref:typename:double
+info	geometry.h	/^	int			info;$/;"	m	struct:segmentStruct	typeref:typename:int
+initRandom	tools.c	/^void initRandom ()$/;"	f	typeref:typename:void
+insertDataAfterIndex	lists.c	/^void insertDataAfterIndex (nodePtr list, void* newData, int index)$/;"	f	typeref:typename:void
+insertListAfterIndex	lists.c	/^void insertListAfterIndex (nodePtr list, nodePtr newList, int index)$/;"	f	typeref:typename:void
+invertList	lists.c	/^nodePtr invertList (nodePtr list, size_t dataSize)$/;"	f	typeref:typename:nodePtr
+j	geometry.h	/^	double		j;$/;"	m	struct:vectorStruct	typeref:typename:double
+joinLists	lists.c	/^void joinLists (nodePtr* head, nodePtr tail)$/;"	f	typeref:typename:void
+k	geometry.h	/^	double		k;$/;"	m	struct:vectorStruct	typeref:typename:double
+lengthFactor	glObjDisplay.c	/^double			lengthFactor = 2.0f;$/;"	v	typeref:typename:double
+listIndex	glObjDisplay.c	/^GLuint*			listIndex;$/;"	v	typeref:typename:GLuint *
+listToFaceArray	faces.c	/^facePtr listToFaceArray (nodePtr list, int listLength)$/;"	f	typeref:typename:facePtr
+listToVertexArray	vertices.c	/^vertexPtr listToVertexArray (nodePtr list, int listLength)$/;"	f	typeref:typename:vertexPtr
+loadBMP	glTextures.c	/^int loadBMP(char *filename, textureImage *texture)$/;"	f	typeref:typename:int
+loadGLTextures	glTextures.c	/^void loadGLTextures(GLuint* textureIndex, char* fileName, textureFilter filter)$/;"	f	typeref:typename:void
+main	objReader.c	/^int main (int argc, char* argv[])$/;"	f	typeref:typename:int
+matrixMultiplication	matrices.c	/^void matrixMultiplication (double a[][3], double b[][3], double result[][3])$/;"	f	typeref:typename:void
+matrixToLinear	matrices.c	/^void matrixToLinear (double initialMatrix[][3], double finalMatrix[])$/;"	f	typeref:typename:void
+matrixVectorMultiplication	matrices.c	/^vectorPtr matrixVectorMultiplication (double matrix[][3], vectorPtr vector)$/;"	f	typeref:typename:vectorPtr
+mode	glDisplay.c	/^GLuint	displayLight, mode, shade, displayNormals;$/;"	v	typeref:typename:GLuint
+modeswitch	glMain.c	/^int	modeswitch;$/;"	v	typeref:typename:int
+move_mouse	glMain.c	/^void move_mouse( int x, int y )$/;"	f	typeref:typename:void
+mt	glDisplay.c	/^struct	htime tv, mt;$/;"	v	typeref:struct:htime
+mx	glDisplay.c	/^GLfloat	mx, my;$/;"	v	typeref:typename:GLfloat
+my	glDisplay.c	/^GLfloat	mx, my;$/;"	v	typeref:typename:GLfloat
+newEdge	edges.c	/^edgePtr newEdge (int counter, int edgeVertex1, int edgeVertex2)$/;"	f	typeref:typename:edgePtr
+next	lists.h	/^	struct node*	next;$/;"	m	struct:node	typeref:struct:node *
+node	lists.h	/^typedef struct node$/;"	s
+node	lists.h	/^} node;$/;"	t	typeref:struct:node
+nodePtr	lists.h	/^typedef node* nodePtr;$/;"	t	typeref:typename:node *
+normalArray	object3D.h	/^	vertexPtr	normalArray;$/;"	m	struct:objectStruct	typeref:typename:vertexPtr
+normalizeVector	geometry.c	/^void normalizeVector (vectorPtr vector)$/;"	f	typeref:typename:void
+normalizeVertexArray	vertices.c	/^vertexPtr normalizeVertexArray (vertexPtr vertex_array, int array_length, double maxSize)$/;"	f	typeref:typename:vertexPtr
+normalsFromVertices	normals3D.c	/^vertexPtr normalsFromVertices (vertexPtr vertices, nodePtr faceList, int numVertices)$/;"	f	typeref:typename:vertexPtr
+null_cursor	glMain.c	/^Cursor		null_cursor;$/;"	v	typeref:typename:Cursor
+numEdges	object3D.h	/^	int			numEdges;$/;"	m	struct:objectStruct	typeref:typename:int
+numFaces	object3D.h	/^	int			numFaces;$/;"	m	struct:objectStruct	typeref:typename:int
+numNormals	object3D.h	/^	int			numNormals;$/;"	m	struct:objectStruct	typeref:typename:int
+numVertices	object3D.h	/^	int			numVertices;$/;"	m	struct:objectStruct	typeref:typename:int
+objectPtr	object3D.h	/^typedef objectStruct* objectPtr;$/;"	t	typeref:typename:objectStruct *
+objectStruct	object3D.h	/^typedef struct objectStruct$/;"	s
+objectStruct	object3D.h	/^} objectStruct;$/;"	t	typeref:struct:objectStruct
+orientationFromVertices_2D	geometry.c	/^spinType orientationFromVertices_2D (vertexStruct vertex1, vertexStruct vertex2, vertexStruct ve/;"	f	typeref:typename:spinType
+printEdgeList	edges.c	/^void printEdgeList (nodePtr edgeList, int listLength)$/;"	f	typeref:typename:void
+printFaceList	faces.c	/^void printFaceList (nodePtr list)$/;"	f	typeref:typename:void
+printLinearMatrix	matrices.c	/^void printLinearMatrix (double linearMatrix[])$/;"	f	typeref:typename:void
+printMatrix	matrices.c	/^void printMatrix (double a[][3])$/;"	f	typeref:typename:void
+printProgressStar	tools.c	/^void printProgressStar (int counter, int total)$/;"	f	typeref:typename:void
+printVectorList	geometry.c	/^void printVectorList (nodePtr list)$/;"	f	typeref:typename:void
+printVertexArray	vertices.c	/^void printVertexArray (vertexPtr vertexArray, int length)$/;"	f	typeref:typename:void
+printVertexFaceArray	objParser.c	/^void printVertexFaceArray (nodePtr* vertexFaceArray, int numVertices)$/;"	f	typeref:typename:void
+printVertexList	vertices.c	/^void printVertexList (vertexPtr vertexArray, nodePtr list)$/;"	f	typeref:typename:void
+quadratic	glDisplay.c	/^GLUquadricObj *quadratic;$/;"	v	typeref:typename:GLUquadricObj *
+randomInt	tools.c	/^int randomInt (int max)$/;"	f	typeref:typename:int
+readFace	objParser.c	/^facePtr readFace (FILE* OBJ_FD, boolean textured, boolean normals)$/;"	f	typeref:typename:facePtr
+readObjFile	objParser.c	/^objectStruct readObjFile (char* filename)$/;"	f	typeref:typename:objectStruct
+readTextureVertex	objParser.c	/^vertexPtr readTextureVertex (FILE* OBJ_FD)$/;"	f	typeref:typename:vertexPtr
+readVertex	objParser.c	/^vertexPtr readVertex (FILE* OBJ_FD)$/;"	f	typeref:typename:vertexPtr
+removeNode	lists.c	/^void* removeNode (nodePtr* list, int itemPosition)$/;"	f	typeref:typename:void *
+resetTranslation	glDisplay.c	/^int		resetTranslation;$/;"	v	typeref:typename:int
+resetX	glDisplay.c	/^int     resetX, resetY;$/;"	v	typeref:typename:int
+resetY	glDisplay.c	/^int     resetX, resetY;$/;"	v	typeref:typename:int
+rotateListNode	lists.c	/^void* rotateListNode (nodePtr* list)$/;"	f	typeref:typename:void *
+rotationMatrixAroundVector	matrices.c	/^void rotationMatrixAroundVector (vectorPtr vector, double angle, double rotationMatrix[][3])$/;"	f	typeref:typename:void
+run	glMain.c	/^int	run;$/;"	v	typeref:typename:int
+rx	glDisplay.c	/^GLfloat	rx, ry;$/;"	v	typeref:typename:GLfloat
+ry	glDisplay.c	/^GLfloat	rx, ry;$/;"	v	typeref:typename:GLfloat
+scale	glDisplay.c	/^GLfloat	scale = 1.0f;$/;"	v	typeref:typename:GLfloat
+screenshotCounter	glDisplay.c	/^int		screenshotCounter;$/;"	v	typeref:typename:int
+segmentPtr	geometry.h	/^typedef segmentStruct* segmentPtr;$/;"	t	typeref:typename:segmentStruct *
+segmentStruct	geometry.h	/^typedef struct segmentStruct$/;"	s
+segmentStruct	geometry.h	/^} segmentStruct;$/;"	t	typeref:struct:segmentStruct
+shade	glDisplay.c	/^GLuint	displayLight, mode, shade, displayNormals;$/;"	v	typeref:typename:GLuint
+slopeFromSegment_2D	geometry.c	/^double slopeFromSegment_2D (segmentPtr segment)$/;"	f	typeref:typename:double
+slopeFromVertices_2D	geometry.c	/^double slopeFromVertices_2D (vertexPtr vertex1, vertexPtr vertex2)$/;"	f	typeref:typename:double
+spinType	geometry.h	/^typedef enum {CW, CCW, COL}     spinType;$/;"	t	typeref:enum:__anonf62ab2e70103
+squareDistance	geometry.c	/^double squareDistance (vertexStruct vertex1, vertexStruct vertex2)$/;"	f	typeref:typename:double
+start	glMain.c	/^    struct timeval start;$/;"	m	struct:timer	typeref:struct:timeval	file:
+string	objParser.c	/^char*		string;$/;"	v	typeref:typename:char *
+sumVectors	geometry.c	/^vectorPtr sumVectors (vectorPtr vector1, vectorPtr vector2)$/;"	f	typeref:typename:vectorPtr
+swapPointIndex	vertices.c	/^void swapPointIndex (int* index1, int* index2)$/;"	f	typeref:typename:void
+swapVertexIndex	vertices.c	/^void swapVertexIndex (int* index1, int* index2)$/;"	f	typeref:typename:void
+testSegmentCurveIntersect	geometry.c	/^boolean testSegmentCurveIntersect (vertexPtr vertexArray, nodePtr curve, vertexStruct vertex1, v/;"	f	typeref:typename:boolean
+testSegmentsIntersect_2D	geometry.c	/^boolean testSegmentsIntersect_2D (vertexStruct vertexA1, vertexStruct vertexA2, vertexStruct ver/;"	f	typeref:typename:boolean
+testSegmentsIntersect_NotInclusive_2D	geometry.c	/^boolean testSegmentsIntersect_NotInclusive_2D (vertexStruct vertexA1, vertexStruct vertexA2, ver/;"	f	typeref:typename:boolean
+textureArray	object3D.h	/^	vertexPtr	textureArray;$/;"	m	struct:objectStruct	typeref:typename:vertexPtr
+textureFilter	glTextures.h	/^typedef enum {NEAR, LINEAR, MIPMAP}	textureFilter;$/;"	t	typeref:enum:__anon4fad1ff20103
+textureImage	glTextures.c	/^} textureImage;$/;"	t	typeref:struct:__anon4fad1fed0108	file:
+textured	object3D.h	/^	boolean		textured;$/;"	m	struct:objectStruct	typeref:typename:boolean
+textures	glObjDisplay.c	/^GLuint			textures[NUM_TEXTURES];$/;"	v	typeref:typename:GLuint[]
+timer	glMain.c	/^float timer( struct timer *t, int reset )$/;"	f	typeref:typename:float
+timer	glMain.c	/^struct timer$/;"	s	file:
+transposeMatrix	matrices.c	/^void transposeMatrix (double original[][3], double inverted[][3])$/;"	f	typeref:typename:void
+tv	glDisplay.c	/^struct	htime tv, mt;$/;"	v	typeref:struct:htime
+tx	glDisplay.c	/^GLfloat	tx, ty;$/;"	v	typeref:typename:GLfloat
+ty	glDisplay.c	/^GLfloat	tx, ty;$/;"	v	typeref:typename:GLfloat
+type	geometry.h	/^	vectorType	type;$/;"	m	struct:vectorStruct	typeref:typename:vectorType
+usage	objReader.c	/^void usage (char* programName)$/;"	f	typeref:typename:void
+vectorFromVertices	geometry.c	/^vectorPtr vectorFromVertices (vertexPtr vertex1, vertexPtr vertex2)$/;"	f	typeref:typename:vectorPtr
+vectorId	geometry.h	/^	int			vectorId;$/;"	m	struct:vectorStruct	typeref:typename:int
+vectorLength	geometry.c	/^double vectorLength (vectorPtr vector)$/;"	f	typeref:typename:double
+vectorPtr	geometry.h	/^typedef vectorStruct* vectorPtr;$/;"	t	typeref:typename:vectorStruct *
+vectorStruct	geometry.h	/^typedef struct vectorStruct$/;"	s
+vectorStruct	geometry.h	/^} vectorStruct;$/;"	t	typeref:struct:vectorStruct
+vectorType	geometry.h	/^typedef enum {NORMAL, INTER, VISITED}	vectorType;$/;"	t	typeref:enum:__anonf62ab2e70203
+vertex	faces.h	/^	int			vertex[4];$/;"	m	struct:faceStruct	typeref:typename:int[4]
+vertex1	edges.h	/^	int		vertex1;$/;"	m	struct:edgeStruct	typeref:typename:int
+vertex1	geometry.h	/^	int			vertex1;$/;"	m	struct:segmentStruct	typeref:typename:int
+vertex2	edges.h	/^	int		vertex2;$/;"	m	struct:edgeStruct	typeref:typename:int
+vertex2	geometry.h	/^	int			vertex2;$/;"	m	struct:segmentStruct	typeref:typename:int
+vertexArray	object3D.h	/^	vertexPtr	vertexArray;$/;"	m	struct:objectStruct	typeref:typename:vertexPtr
+vertexArrayToList	vertices.c	/^nodePtr vertexArrayToList (vertexPtr array, int length)$/;"	f	typeref:typename:nodePtr
+vertexFaceArray	object3D.h	/^	nodePtr*	vertexFaceArray;$/;"	m	struct:objectStruct	typeref:typename:nodePtr *
+vertexId	vertices.h	/^	int     vertexId;$/;"	m	struct:vertexStruct	typeref:typename:int
+vertexPtr	vertices.h	/^typedef vertexStruct* vertexPtr;$/;"	t	typeref:typename:vertexStruct *
+vertexStruct	vertices.h	/^typedef struct vertexStruct$/;"	s
+vertexStruct	vertices.h	/^} vertexStruct;$/;"	t	typeref:struct:vertexStruct
+vertexType	vertices.h	/^typedef enum {ALL_POS, ALL_NEG, MIXED, FLAT}			vertexType;$/;"	t	typeref:enum:__anon1a8023400103
+video_capture	glDisplay.c	/^GLuint	video_capture;$/;"	v	typeref:typename:GLuint
+vx	glDisplay.c	/^GLfloat	vx, vy, vz;$/;"	v	typeref:typename:GLfloat
+vy	glDisplay.c	/^GLfloat	vx, vy, vz;$/;"	v	typeref:typename:GLfloat
+vz	glDisplay.c	/^GLfloat	vx, vy, vz;$/;"	v	typeref:typename:GLfloat
+width	glDisplay.c	/^int	width, height;$/;"	v	typeref:typename:int
+width	glTextures.c	/^    int width;$/;"	m	struct:__anon4fad1fed0108	typeref:typename:int	file:
+win	glMain.c	/^Window		win;$/;"	v	typeref:typename:Window
+wmDelete	glMain.c	/^Atom		wmDelete;$/;"	v	typeref:typename:Atom
+x	glDisplay.c	/^GLfloat	x, y, z;$/;"	v	typeref:typename:GLfloat
+x	vertices.h	/^	double  x;$/;"	m	struct:vertexStruct	typeref:typename:double
+xfopen	tools.c	/^FILE* xfopen (char* fileName, char* mode)$/;"	f	typeref:typename:FILE *
+xmalloc	tools.c	/^void* xmalloc (size_t size)$/;"	f	typeref:typename:void *
+y	glDisplay.c	/^GLfloat	x, y, z;$/;"	v	typeref:typename:GLfloat
+y	vertices.h	/^	double  y;$/;"	m	struct:vertexStruct	typeref:typename:double
+z	glDisplay.c	/^GLfloat	x, y, z;$/;"	v	typeref:typename:GLfloat
+z	vertices.h	/^	double  z;$/;"	m	struct:vertexStruct	typeref:typename:double
