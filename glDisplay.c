@@ -88,7 +88,7 @@ GLfloat fogColor[] = { 0.5f, 0.5f, 0.5f, 1.0f };    /* fog color */
 
 /* text drawing routine declaration */
 void gl_printf( GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha,
-                GLint x, GLint y, GLuint font, const char *format, ... );
+        GLint x, GLint y, GLuint font, const char *format, ... );
 
 /* new functions for rotation and scaling from the MRI viewer */
 void gl_scale_scene ();
@@ -121,7 +121,7 @@ int gl_data( void )
     displayLight = 1;
     displayNormals = 0;
 
-	video_capture = 0;
+    video_capture = 0;
     screenshotCounter = 1;
 
     return( 0 );
@@ -130,27 +130,27 @@ int gl_data( void )
 // define the properties of the first light source.
 void gl_init_light ()
 {
-	float       lightPosition[4] = {-5.0f,5.0f,5.0f,0.0f};
-	float       difuseLight[4] = {0.8f,0.8f,0.8f,1.0f};
-	float       ambientLight[4] = {0.4f,0.4f,0.4f,1.0f};
+    float       lightPosition[4] = {-5.0f,5.0f,5.0f,0.0f};
+    float       difuseLight[4] = {0.8f,0.8f,0.8f,1.0f};
+    float       ambientLight[4] = {0.4f,0.4f,0.4f,1.0f};
 
-	glLightfv(GL_LIGHT0, GL_POSITION, lightPosition);
-	glLightfv(GL_LIGHT0, GL_AMBIENT, ambientLight);
-	glLightfv(GL_LIGHT0, GL_DIFFUSE, difuseLight);
-	glLightfv(GL_LIGHT0, GL_SPECULAR, difuseLight);
+    glLightfv(GL_LIGHT0, GL_POSITION, lightPosition);
+    glLightfv(GL_LIGHT0, GL_AMBIENT, ambientLight);
+    glLightfv(GL_LIGHT0, GL_DIFFUSE, difuseLight);
+    glLightfv(GL_LIGHT0, GL_SPECULAR, difuseLight);
 }
 
 
 // define properties for the fog
 void gl_init_fog ()
 {
-	glFogi(GL_FOG_MODE, fogMode[fogFilter]);
-	glFogfv(GL_FOG_COLOR, fogColor);
-	glFogf(GL_FOG_DENSITY, 0.05f);
-	glHint(GL_FOG_HINT, GL_DONT_CARE);
-	// glHint(GL_FOG_HINT, GL_NICEST);
-	// glFogf(GL_FOG_START, 1.0f);
-	// glFogf(GL_FOG_END, 5.0f);
+    glFogi(GL_FOG_MODE, fogMode[fogFilter]);
+    glFogfv(GL_FOG_COLOR, fogColor);
+    glFogf(GL_FOG_DENSITY, 0.05f);
+    glHint(GL_FOG_HINT, GL_DONT_CARE);
+    // glHint(GL_FOG_HINT, GL_NICEST);
+    // glFogf(GL_FOG_START, 1.0f);
+    // glFogf(GL_FOG_END, 5.0f);
 }
 
 
@@ -167,7 +167,7 @@ int gl_init( void )
     glEnable( GL_LINE_SMOOTH );
     glLineWidth( 1.0 );
 
-	glEnable(GL_COLOR_MATERIAL);			// Enable Color Material
+    glEnable(GL_COLOR_MATERIAL);			// Enable Color Material
 
     glPolygonMode (GL_FRONT_AND_BACK, GL_FILL);
     // glPolygonMode (GL_FRONT, GL_FILL);
@@ -227,11 +227,11 @@ void gl_scene( )
     glLoadIdentity();
 
     glPushMatrix ();
-		gl_translate_scene ();
-		gl_scale_scene ();
-		gl_rotate_scene ();
+    gl_translate_scene ();
+    gl_scale_scene ();
+    gl_rotate_scene ();
 
-		gl_draw_scene_1 ();
+    gl_draw_scene_1 ();
     glPopMatrix ();
 }
 
@@ -241,7 +241,7 @@ void gl_draw( )
 {
     glClear( GL_COLOR_BUFFER_BIT );
 
-	// SINGLE VIEWPORT
+    // SINGLE VIEWPORT
     glViewport( 0, 0, width, height );
     glMatrixMode( GL_PROJECTION );
     glLoadIdentity();
@@ -249,13 +249,13 @@ void gl_draw( )
     gluLookAt( 0.0, 1.0, 10.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0 );
     gl_init_light ();
 
-	gl_scene ();
+    gl_scene ();
 
     // Print the framerate.
     if( fps && ToggleDisplayInfo )
     {
         gl_printf( 0.0f, 0.0f, 0.0f, 1.0f, width - 100, height - 40,
-        font, "%5.1f fps", fps );
+                font, "%5.1f fps", fps );
     }
 
     glFinish();
@@ -266,8 +266,8 @@ void gl_draw( )
         fps = (GLfloat) frames / timer( &tv, 1 );
         frames = 0;
 
-		if (video_capture)
-			SaveScreenShot(screenshotCounter++, width, height);
+        if (video_capture)
+            SaveScreenShot(screenshotCounter++, width, height);
     }
 }
 
@@ -320,29 +320,29 @@ void gl_event( int event, int data, int xpos, int ypos )
 
     if( event == 2 )    /* mouse move */
     {
-	if (activateRotation)
-	{
-	    // Change the speed of rotation by the movement of the mouse.
+        if (activateRotation)
+        {
+            // Change the speed of rotation by the movement of the mouse.
             vy += 256.0f * (GLfloat) ( xpos - width  / 2 ) / width;
             vx += 256.0f * (GLfloat) ( ypos - height  / 2 ) / height;
-	}
+        }
 
-	if (activateTranslation)
-	{
-	    // Change the speed of rotation by the movement of the mouse.
-	    mx += 256.0f * (GLfloat) ( xpos - width  / 2 ) / width;
-	    my -= 256.0f * (GLfloat) ( ypos - height  / 2 ) / height;
-	}
+        if (activateTranslation)
+        {
+            // Change the speed of rotation by the movement of the mouse.
+            mx += 256.0f * (GLfloat) ( xpos - width  / 2 ) / width;
+            my -= 256.0f * (GLfloat) ( ypos - height  / 2 ) / height;
+        }
 
-	if (activateScaling)
-	{
-	    tmpScale = scale;
+        if (activateScaling)
+        {
+            tmpScale = scale;
 
-	    scale -= scale * (GLfloat) ( ypos - height  / 2 ) / height;
+            scale -= scale * (GLfloat) ( ypos - height  / 2 ) / height;
 
-	    if (scale < 0.001)
-		    scale = tmpScale;
-	}
+            if (scale < 0.001)
+                scale = tmpScale;
+        }
 
         if( timer( &mt, 0 ) > 0.05 )
         {
@@ -357,128 +357,128 @@ void gl_event( int event, int data, int xpos, int ypos )
 
     if( event == 4 )    /* key up */
     {
-		switch (data)
-		{
-			// Save a single screenshot of the rendered scene
-			case 'p': case 'P':
-				SaveScreenShot(screenshotCounter++, width, height);
-				break;
+        switch (data)
+        {
+            // Save a single screenshot of the rendered scene
+            case 'p': case 'P':
+                SaveScreenShot(screenshotCounter++, width, height);
+                break;
 
-			case '#':
-				video_capture ^= 1;
-				printf ("VIDEO CAPUTRE IS = %d\n", video_capture);
-				break;
+            case '#':
+                video_capture ^= 1;
+                printf ("VIDEO CAPUTRE IS = %d\n", video_capture);
+                break;
 
-			// Toggle drawing of the vertexNormals.
-			case 'n': case 'N':
-				displayNormals ^= 1;
-				break;
+                // Toggle drawing of the vertexNormals.
+            case 'n': case 'N':
+                displayNormals ^= 1;
+                break;
 
-			// Toggle the drawing mode, FILL or LINE
-			case 'm': case 'M':
-				mode ^= 1;
-				if (mode)
-				{
-					glPolygonMode (GL_FRONT_AND_BACK, GL_FILL);
-					// glPolygonMode (GL_FRONT, GL_FILL);
-					// glPolygonMode (GL_BACK, GL_LINE);
-				}
-				else
-				{
-					glPolygonMode (GL_FRONT_AND_BACK, GL_LINE);
-				}
-				break;
+                // Toggle the drawing mode, FILL or LINE
+            case 'm': case 'M':
+                mode ^= 1;
+                if (mode)
+                {
+                    glPolygonMode (GL_FRONT_AND_BACK, GL_FILL);
+                    // glPolygonMode (GL_FRONT, GL_FILL);
+                    // glPolygonMode (GL_BACK, GL_LINE);
+                }
+                else
+                {
+                    glPolygonMode (GL_FRONT_AND_BACK, GL_LINE);
+                }
+                break;
 
-			// Toggle the drawing mode, FILL or LINE
-			case 'k': case 'K':
-				shade ^= 1;
-				if (shade)
-					glShadeModel (GL_SMOOTH);
-				else
-					glShadeModel (GL_FLAT);
-				break;
+                // Toggle the drawing mode, FILL or LINE
+            case 'k': case 'K':
+                shade ^= 1;
+                if (shade)
+                    glShadeModel (GL_SMOOTH);
+                else
+                    glShadeModel (GL_FLAT);
+                break;
 
-			// Toggle lighting
-			case 'l': case 'L':
-				displayLight ^= 1;
-				if (displayLight)
-					glEnable (GL_LIGHTING);
-				else
-					glDisable (GL_LIGHTING);
-				break;
+                // Toggle lighting
+            case 'l': case 'L':
+                displayLight ^= 1;
+                if (displayLight)
+                    glEnable (GL_LIGHTING);
+                else
+                    glDisable (GL_LIGHTING);
+                break;
 
-			// Rotation around the X axis.
-			case 'd': case 'D':
-				vx += 20.0f;
-				break;
-			case 'e': case 'E':
-				vx -= 20.0f;
-				break;
+                // Rotation around the X axis.
+            case 'd': case 'D':
+                vx += 20.0f;
+                break;
+            case 'e': case 'E':
+                vx -= 20.0f;
+                break;
 
-			// Rotation around the Y axis.
-			case 'f': case 'F':
-				vy += 20.0f;
-				break;
-			case 's': case 'S':
-				vy -= 20.0f;
-				break;
+                // Rotation around the Y axis.
+            case 'f': case 'F':
+                vy += 20.0f;
+                break;
+            case 's': case 'S':
+                vy -= 20.0f;
+                break;
 
-			// Reset rotation around X axis.
-			case 'z': case 'Z':
-				resetX = 1;
-				vx = 0.0f;
-				break;
+                // Reset rotation around X axis.
+            case 'z': case 'Z':
+                resetX = 1;
+                vx = 0.0f;
+                break;
 
-			// Reset rotation around the Y axis.
-			case 'x': case 'X':
-				resetY = 1;
-				vy = 0.0f;
-				break;
+                // Reset rotation around the Y axis.
+            case 'x': case 'X':
+                resetY = 1;
+                vy = 0.0f;
+                break;
 
-			// Reset rotation around the Y axis.
-			case 'v': case 'V':
-				resetTranslation = 1;
-				mx = my = 0.0f;
-				break;
+                // Reset rotation around the Y axis.
+            case 'v': case 'V':
+                resetTranslation = 1;
+                mx = my = 0.0f;
+                break;
 
-			// Scaling
-			case 'q': case 'Q':
-				scale *= 1.1;
-				break;
-			case 'a': case 'A':
-				tmpScale = scale;
+                // Scaling
+            case 'q': case 'Q':
+                scale *= 1.1;
+                break;
+            case 'a': case 'A':
+                tmpScale = scale;
 
-				scale *= 0.9;
+                scale *= 0.9;
 
-				if (scale < 0.001)
-					scale = tmpScale;
-				break;
+                if (scale < 0.001)
+                    scale = tmpScale;
+                break;
 
-			// Reset scaling
-			case 'c': case 'C':
-					scale = 1;
-				break;
-		}
+                // Reset scaling
+            case 'c': case 'C':
+                scale = 1;
+                break;
+        }
 
     }
 
     if( event == 5 )    /* arrow keys */
     {
-		switch (data)
-		{
-			case 0:	// UP Arrow key
-					my += 20.0f;
-			break;
-			case 1:	// DOWN Arrow key
-					my -= 20.0f;
-			break;
-			case 2:	// LEFT Arrow key
-					mx -= 20.0f;
-			break;
-			case 3:	// RIGHT Arrow key
-					mx += 20.0f;
-			break;
-		}
+        switch (data)
+        {
+            case 0:	// UP Arrow key
+                my += 20.0f;
+                break;
+            case 1:	// DOWN Arrow key
+                my -= 20.0f;
+                break;
+            case 2:	// LEFT Arrow key
+                mx -= 20.0f;
+                break;
+            case 3:	// RIGHT Arrow key
+                mx += 20.0f;
+                break;
+        }
     }
 }
 
@@ -497,30 +497,30 @@ void gl_translate_scene ()
     // Update the angles for rotation.
     if( fps )
     {
-	if (resetTranslation)
-	{
-	    if (fps > 4.0f)
-	    {
-	    	tx *= 1.0f - 4.0f / fps;
-	    	ty *= 1.0f - 4.0f / fps;
-	    }
-	    else
-	    {
-		tx = 0.0f;
-		ty = 0.0f;
-	    }
-	    if ( (abs(tx) <= 0) && (abs(ty) <= 0) )
-	    {
-		resetTranslation = 0;
-		tx = 0.0f;
-		ty = 0.0f;
-	    }
-	}
-	else
-	{
+        if (resetTranslation)
+        {
+            if (fps > 4.0f)
+            {
+                tx *= 1.0f - 4.0f / fps;
+                ty *= 1.0f - 4.0f / fps;
+            }
+            else
+            {
+                tx = 0.0f;
+                ty = 0.0f;
+            }
+            if ( (abs(tx) <= 0) && (abs(ty) <= 0) )
+            {
+                resetTranslation = 0;
+                tx = 0.0f;
+                ty = 0.0f;
+            }
+        }
+        else
+        {
             tx += 0.1 * (mx / fps);
             ty += 0.1 * (my / fps);
-	}
+        }
 
         if( fps > 4.0f )
         {
@@ -547,34 +547,34 @@ void gl_rotate_scene ()
     // Update the angles for rotation.
     if( fps )
     {
-	if (resetX)
-	{
-	    if (fps > 4.0f)
-	    	rx *= 1.0f - 4.0f / fps;
-	    else
-		rx = 0.0f;
-	    if (abs(rx) <= 0)
-	    {
-		resetX = 0;
-		rx = 0.0f;
-	    }
-	}
-	else
+        if (resetX)
+        {
+            if (fps > 4.0f)
+                rx *= 1.0f - 4.0f / fps;
+            else
+                rx = 0.0f;
+            if (abs(rx) <= 0)
+            {
+                resetX = 0;
+                rx = 0.0f;
+            }
+        }
+        else
             rx += vx / fps;
 
-	if (resetY)
-	{
-	    if (fps > 4.0f)
-	    	ry *= 1.0f - 4.0f / fps;
-	    else
-		ry = 0.0f;
-	    if (abs(ry) <= 0)
-	    {
-		resetY = 0;
-		ry = 0.0f;
-	    }
-	}
-	else
+        if (resetY)
+        {
+            if (fps > 4.0f)
+                ry *= 1.0f - 4.0f / fps;
+            else
+                ry = 0.0f;
+            if (abs(ry) <= 0)
+            {
+                resetY = 0;
+                ry = 0.0f;
+            }
+        }
+        else
             ry += vy / fps;
 
         if( fps > 4.0f )
@@ -603,7 +603,7 @@ void gl_rotate_scene ()
 /* text drawing routine */
 
 void gl_printf( GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha,
-                GLint x, GLint y, GLuint font, const char *format, ... )
+        GLint x, GLint y, GLuint font, const char *format, ... )
 {
     va_list		argp;
     char		text[256];
@@ -620,23 +620,22 @@ void gl_printf( GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha,
     glMatrixMode( GL_PROJECTION );
     glPushMatrix();
 
-        glLoadIdentity();
-        gluOrtho2D( 0.0, (GLdouble) width,
-                    0.0, (GLdouble) height );
+    glLoadIdentity();
+    gluOrtho2D( 0.0, (GLdouble) width, 0.0, (GLdouble) height );
 
-        glMatrixMode( GL_MODELVIEW );
-        glLoadIdentity();
+    glMatrixMode( GL_MODELVIEW );
+    glLoadIdentity();
 
-        glColor4f( red, green, blue, alpha );
-        glRasterPos2i( x, y );
-        glListBase( font );
-        glCallLists( strlen( text ), GL_UNSIGNED_BYTE, text );
+    glColor4f( red, green, blue, alpha );
+    glRasterPos2i( x, y );
+    glListBase( font );
+    glCallLists( strlen( text ), GL_UNSIGNED_BYTE, text );
 
-    	glMatrixMode( GL_PROJECTION );
+    glMatrixMode( GL_PROJECTION );
     glPopMatrix();
 
     // Reenable lighting
-	gl_restore_lighting (light_status);
+    gl_restore_lighting (light_status);
 }
 
 
@@ -648,7 +647,7 @@ GLvoid buildFont(GLvoid)
     font = glGenLists(96);      /* storage for 96 characters */
     /* load a font with a specific name in "Host Portable Character Encoding" */
     fontData = XLoadQueryFont(dpy,
-        "-*-helvetica-bold-r-normal--24-*-*-*-p-*-iso8859-1");
+            "-*-helvetica-bold-r-normal--24-*-*-*-p-*-iso8859-1");
     if (fontData == NULL)
     {
         /* this really *should* be available on every X Window System...*/
