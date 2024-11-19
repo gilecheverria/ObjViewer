@@ -293,7 +293,7 @@ facePtr readFace (FILE* OBJ_FD, boolean textured, boolean normals)
 	// If the next character is different from:
 	//  ASCII 10 = LF (line feed)
 	//  ASCII 13 = CR (carriage return)
-	if ( (nextChar != 10) && (nextChar != 13) )
+	if ( (nextChar != 10) && (nextChar != 13) && (nextChar != EOF) )
 	{
 		new_face->faceVertices = 4;
 
